@@ -1,0 +1,66 @@
+# Snyk (https://snyk.io) policy file, patches or ignores known vulnerabilities.
+version: v1.21.5
+ignore: {}
+# patches apply the minimum changes required to fix a vulnerability
+patch:
+  'npm:debug:20170905':
+    - pouchdb-express-router > express > debug:
+        patched: '2021-07-15T20:56:04.605Z'
+    - pouchdb-express-router > express > finalhandler > debug:
+        patched: '2021-07-15T20:56:04.605Z'
+    - pouchdb-express-router > express > send > debug:
+        patched: '2021-07-15T20:56:04.605Z'
+    - pouchdb-express-router > express > serve-static > send > debug:
+        patched: '2021-07-15T20:56:04.605Z'
+  'npm:hoek:20180212':
+    - istanbul-coveralls > coveralls > request > hawk > hoek:
+        patched: '2021-07-15T20:56:04.605Z'
+    - istanbul-coveralls > coveralls > request > hawk > boom > hoek:
+        patched: '2021-07-15T20:56:04.605Z'
+    - istanbul-coveralls > coveralls > request > hawk > sntp > hoek:
+        patched: '2021-07-15T20:56:04.605Z'
+    - istanbul-coveralls > coveralls > request > hawk > cryptiles > boom > hoek:
+        patched: '2021-07-15T20:56:04.605Z'
+  'npm:mime:20170907':
+    - pouchdb-express-router > express > send > mime:
+        patched: '2021-07-15T20:56:04.605Z'
+    - pouchdb-express-router > express > serve-static > send > mime:
+        patched: '2021-07-15T20:56:04.605Z'
+  'npm:minimatch:20160620':
+    - pouchdb-express-router > nodemon > minimatch:
+        patched: '2021-07-15T20:56:04.605Z'
+    - watch-glob > globule > glob > minimatch:
+        patched: '2021-07-15T20:56:04.605Z'
+    - watch-glob > globule > minimatch:
+        patched: '2021-07-15T20:56:04.605Z'
+    - watch-glob > gaze > globule > minimatch:
+        patched: '2021-07-15T20:56:04.605Z'
+    - watch-glob > gaze > globule > glob > minimatch:
+        patched: '2021-07-15T20:56:04.605Z'
+  'npm:ms:20151024':
+    - pouchdb-express-router > express > debug > ms:
+        patched: '2021-07-15T20:56:04.605Z'
+    - pouchdb-express-router > express > finalhandler > debug > ms:
+        patched: '2021-07-15T20:56:04.605Z'
+    - pouchdb-express-router > express > send > debug > ms:
+        patched: '2021-07-15T20:56:04.605Z'
+    - pouchdb-express-router > express > serve-static > send > debug > ms:
+        patched: '2021-07-15T20:56:04.605Z'
+    - pouchdb-express-router > express > send > ms:
+        patched: '2021-07-15T20:56:04.605Z'
+    - pouchdb-express-router > express > serve-static > send > ms:
+        patched: '2021-07-15T20:56:04.605Z'
+  'npm:negotiator:20160616':
+    - pouchdb-express-router > express > accepts > negotiator:
+        patched: '2021-07-15T20:56:04.605Z'
+  'npm:semver:20150403':
+    - pouchdb-express-router > nodemon > update-notifier > semver:
+        patched: '2021-07-15T20:56:04.605Z'
+  'npm:send:20151103':
+    - pouchdb-express-router > express > send:
+        patched: '2021-07-15T20:56:04.605Z'
+    - pouchdb-express-router > express > serve-static > send:
+        patched: '2021-07-15T20:56:04.605Z'
+  'npm:tunnel-agent:20170305':
+    - istanbul-coveralls > coveralls > request > tunnel-agent:
+        patched: '2021-07-15T20:56:04.605Z'
