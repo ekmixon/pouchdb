@@ -20,7 +20,7 @@
     "launch-dev-server": "node ./bin/dev-server.js",
     "test": "bash bin/run-test.sh",
     "posttest": "npm run eslint",
-    "prepublish": "npm run build",
+    "prepublish": "npm run snyk-protect && npm run build",
     "release": "sh bin/release.sh",
     "install-jekyll": "sh bin/install-jekyll.sh",
     "publish-site": "sh bin/publish-site.sh",
@@ -31,7 +31,8 @@
     "build-perf": "browserify tests/performance/index.js > tests/performance-bundle.js",
     "set-version": "node bin/set-version.js",
     "verify-build": "sh bin/verify-build.sh",
-    "test-webpack": "bash bin/test-webpack.sh"
+    "test-webpack": "bash bin/test-webpack.sh",
+    "snyk-protect": "snyk-protect"
   },
   "dependencies": {
     "argsarray": "0.0.1",
@@ -51,11 +52,12 @@
     "ltgt": "2.1.3",
     "memdown": "1.2.4",
     "readable-stream": "1.0.33",
-    "request": "2.80.0",
+    "request": "2.82.0",
     "spark-md5": "3.0.0",
     "through2": "2.0.3",
     "vuvuzela": "1.0.3",
-    "websql": "0.4.4"
+    "websql": "1.0.0",
+    "@snyk/protect": "latest"
   },
   "devDependencies": {
     "argsarray": "0.0.1",
@@ -103,14 +105,14 @@
     "rollup-plugin-replace": "1.1.1",
     "sauce-connect-launcher": "1.2.2",
     "seedrandom": "2.4.2",
-    "selenium-standalone": "6.4.0",
+    "selenium-standalone": "6.14.1",
     "stream-to-promise": "1.1.1",
     "tape": "4.6.3",
     "throw-max-listeners-error": "1.0.1",
     "ua-parser-js": "0.7.12",
     "uglify-js": "2.8.21",
     "watch-glob": "0.1.3",
-    "wd": "1.2.0"
+    "wd": "1.6.2"
   },
   "// greenkeeper": [
     "// chai-as-promised is pinned because of breaking changes in 6.0.0",
@@ -127,5 +129,6 @@
       "readable-stream",
       "stream-to-promise"
     ]
-  }
+  },
+  "snyk": true
 }
