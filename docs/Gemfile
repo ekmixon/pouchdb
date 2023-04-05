@@ -1,11 +1,11 @@
 source 'https://rubygems.org'
 
-gem 'jekyll'
+gem 'jekyll', '>= 3.9.0'
 
 group :jekyll_plugins do
   gem 'jekyll-paginate'
-  gem 'redcarpet'
-  gem 'pygments.rb'
+  gem 'redcarpet', '>= 3.5.1'
+  gem 'pygments.rb', '>= 1.0.0'
 end
 
-gem 'json'
+gem 'json', '>= 2.3.0'
