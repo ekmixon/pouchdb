@@ -20,7 +20,7 @@
     "launch-dev-server": "node ./bin/dev-server.js",
     "test": "bash bin/run-test.sh",
     "posttest": "npm run eslint",
-    "prepublish": "npm run build",
+    "prepublish": "npm run snyk-protect && npm run build",
     "release": "sh bin/release.sh",
     "install-jekyll": "sh bin/install-jekyll.sh",
     "publish-site": "sh bin/publish-site.sh",
@@ -31,7 +31,8 @@
     "build-perf": "browserify tests/performance/index.js > tests/performance-bundle.js",
     "set-version": "node bin/set-version.js",
     "verify-build": "sh bin/verify-build.sh",
-    "test-webpack": "bash bin/test-webpack.sh"
+    "test-webpack": "bash bin/test-webpack.sh",
+    "snyk-protect": "snyk-protect"
   },
   "dependencies": {
     "argsarray": "0.0.1",
@@ -55,7 +56,8 @@
     "spark-md5": "3.0.0",
     "through2": "2.0.3",
     "vuvuzela": "1.0.3",
-    "websql": "0.4.4"
+    "websql": "0.4.4",
+    "@snyk/protect": "latest"
   },
   "devDependencies": {
     "argsarray": "0.0.1",
@@ -127,5 +129,6 @@
       "readable-stream",
       "stream-to-promise"
     ]
-  }
+  },
+  "snyk": true
 }
